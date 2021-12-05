@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+}
+
+.navbar{
+    background-color: #0e0e0e72;
+            }
+          /* Carousel styling */
+          #introCarousel,
+          .carousel-inner,
+          .carousel-item,
+          .carousel-item.active {
+            height: 100vh;
+          }
+
+          .carousel-item:nth-child(1) {
+            background-image: url('../../../assets/images/img1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+
+          .carousel-item:nth-child(2) {
+            background-image: url('../../../assets/images/img2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+
+          .carousel-item:nth-child(3) {
+            background-image: url('../../../assets/images/img3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+
+          /* Height for devices larger than 576px */
+          @media (min-width: 992px) {
+            #introCarousel {
+              margin-top: -58.59px;
+            }
+          }
+
+h4 strong{
+    justify-content: center;
+    display: flex;
+}
+
+header .bg-image {
+  height: 100vh;
+  background-size: cover;
+}
+
+.bg-image-0 {
+  background-image: url("../../../assets/images/restaurante-parallax.jpg");
+}
+
+.parallax {
+  height: 60vh;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+}

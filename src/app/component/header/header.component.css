@@ -1,0 +1,42 @@
+
+.menu{
+    background: #4E1B19;
+  }
+
+  .postres{
+    color: black !important;
+  }
+
+  .link-menu{
+    font-size: 1.5rem;
+    color: rgb(189, 13, 13);
+    text-decoration: underline rgb(49, 48, 48);
+    cursor: pointer;
+    padding-top: 2.7rem;
+    padding-bottom: 3rem;
+  }
+
+  p {
+    color: #4E1B19;
+  }
+
+.icon {
+  font-size: 30px;
+}
+.icon-cart {
+  color: white;
+  font-size: 27px;
+}
+
+.icon-texto {
+  position: absolute;
+  bottom: 50%;
+  right: -0.1%;
+  font-family: cursive;
+}
+
+.text-logout {
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+

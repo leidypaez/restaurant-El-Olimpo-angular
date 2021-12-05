@@ -1,0 +1,51 @@
+.menu{
+  background: #621414;
+}
+
+.link-menu{
+  font-size: 1.5rem;
+  color: rgb(189, 13, 13);
+  text-decoration: underline rgb(49, 48, 48);
+  cursor: pointer;
+  padding-top: 2.7rem;
+  padding-bottom: 3rem;
+}
+
+.filtros-letra {
+  color: brown;
+  background: rgb(252, 250, 250);
+  font-weight: bold;
+}
+
+.filtros-letra:hover {
+  opacity: 0.8;
+}
+
+.card {
+  height: 480px;
+  width: 280px;
+}
+.card-body{
+ color: rgb(4, 4, 4);
+}
+
+.card-img-top{
+  width: 20rem;
+  height: 20rem;
+}
+
+
+.section-target {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: -10px;
+    background: rgb(252, 251, 252);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(12, 12, 12, 0.611) ;
+}
+
+a {
+  cursor: pointer;
+}

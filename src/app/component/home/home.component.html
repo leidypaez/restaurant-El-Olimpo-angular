@@ -1,0 +1,44 @@
+<app-header></app-header>
+<section>
+  <img src="../../../assets/images/section-home.png" width="1347" height="555" alt="">
+</section>
+<section>
+  <ul class="nav justify-content-center filtros-letra">
+    <li class="nav-item">
+      <a class="nav-link active filtros-letra" aria-current="page" (click)="changeType('tradicional')">Tradicional</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link filtros-letra" (click)="changeType('postres')">Postres</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link filtros-letra" (click)="changeType('bebidas')">Bebidas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link filtros-letra" (click)="changeType('adicionales')">Adicionales</a>
+    </li>
+  </ul>
+</section>
+<!-- targetas -->
+<div class="container">
+  <div class="row">
+  <!-- | filter:'category':criterio -->
+  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 section-target" *ngFor="let item of data | filter:'category':type">
+      <div class="card">
+        <img
+          src="{{item.imageUrl}}"
+          class="img-fluid card-img-top" width="600"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <p class="card-text">{{item.description}}</p>
+          <p class="card-text">
+            {{item.price | currency}} COP
+          </p>
+          <a class="btn btn-primary">Agregar</a>
+           <!-- (click)="agregar(item)" -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

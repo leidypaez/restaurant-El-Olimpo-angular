@@ -1,0 +1,45 @@
+<header class="fondo">
+    <nav class="navbar navbar-expand-lg navbar-light menu">
+      <div class="container-fluid">
+        <img src="../../../assets/images/logo-olimpo-png.png" width="60" height="50" alt="">
+        <p class="color-raya">pp</p>
+        <a class="navbar-brand text-white" [routerLink]="['/home']">El Olimpo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" [routerLink]="['/home']" >Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" [routerLink]="['/orders']" >Pedidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" [routerLink]="['/events']" >Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" [routerLink]="['/chat']" >Consultas</a>
+            </li>
+            <li class="nav-item">
+
+            </li>
+          </ul>
+          <div>
+            <a class="nav-link" [routerLink]="['/carrito']"><i class="fas fa-shopping-cart icon-cart"></i></a>
+          </div>
+          <span class="navbar-text text-white">
+            <i class="fas fa-sign-out-alt icon"></i>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>

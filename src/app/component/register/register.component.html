@@ -1,0 +1,39 @@
+<main>
+  <div
+  class="bg-image">
+  <div class="container">
+    <h2 class="fw-normal mb-3 pb-3 mt-4" style="letter-spacing: 1px;">
+      EL OLIMPO</h2>
+      <form class= "formulario" [formGroup]="usuario" (ngSubmit)="onSubmit()">
+
+          <h4 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Registrarse</h4>
+  
+          <div class="form-outline mb-4">
+            <input  id="username" type="text" formControlName="username" class="form-control form-control-lg" />
+            <label  for="username" class="form-label"><span class="label-text">Usuario</span></label>
+          </div>
+  
+          <div class="form-outline mb-4">
+            <input id="email" type="email" formControlName="email" class="form-control form-control-lg" />
+            <label for="email" class="form-label"><span class="label-text">Correo eléctronico</span></label></div>
+  
+          <div class="form-outline mb-4">
+            <input id="password" type="password" formControlName="password" class="form-control form-control-lg" />
+            <label for="password" class="form-label"><span class="label-text">Nueva contraseña</span></label></div>
+  
+          <div class="form-outline mb-4">
+            <input id="checked" type="password" formControlName="checked" class="form-control form-control-lg" />
+            <label for="checked" class="form-label"><span class="label-text">Confirmar contraseña</span></label></div>
+  
+          <div class="pt-1 mb-4">
+            <!-- <button class="btn btn-info text-black btn-lg btn-block login-button" [routerLink]="['/signIn']" type="submit" [disabled]="!usuario.valid"> -->
+            <button class="btn btn-info text-black btn-lg btn-block login-button" type="submit" [disabled]="!usuario.valid">
+              <!-- (click)="Registrar(registro)" -->
+              <span>Registrarse</span></button>
+          </div>
+        </form>
+  </div>
+  </div>
+</main> 
+
+<!-- Background image -->

@@ -1,0 +1,229 @@
+<!-- CARRUSEL -->
+<header>
+  <nav
+    class="navbar navbar-expand-lg navbar-light waves-light"
+    style="z-index: 2000"
+  >
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarRightAlignExample"
+        aria-controls="navbarRightAlignExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+        <!-- Left links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" [routerLink]="['/signIn']">
+              Iniciar sesión
+            </a>
+          </li>
+          <!-- Navbar dropdown -->
+          <li class="nav-item">
+            <a class="nav-link text-white" [routerLink]="['/signUp']">
+              Registrarse
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div
+    id="introCarousel"
+    class="carousel slide carousel-fade shadow-2-strong"
+    data-mdb-ride="carousel"
+  >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li
+        data-mdb-target="#introCarousel"
+        data-mdb-slide-to="0"
+        class="active"
+      ></li>
+      <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+      <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+    </ol>
+
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="mask" style="background-color: rgba(2, 2, 2, 0.6)">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+              <h1 class="mb-3">El Olimpo</h1>
+              <h5 class="mb-4">
+                Disfruta la mejor comida hecha por los mismisimos dioses
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="mask" style="background-color: rgba(14, 14, 14, 0.398)">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+              <h2 style="background-color: rgba(15, 15, 15, 0.3)">
+                Puedes disfrutas de maravillosos cenas
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div
+          class="mask"
+          style="
+            background: linear-gradient(
+              60deg,
+              rgba(5, 5, 5, 0.309),
+              rgba(14, 14, 14, 0.248) 100%
+            );
+          "
+        >
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+              <h2 style="background-color: rgba(65, 41, 16, 0.3)">
+                Disfruta de los eventos con un delicioso postre
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <a
+      class="carousel-control-prev"
+      href="#introCarousel"
+      role="button"
+      data-mdb-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#introCarousel"
+      role="button"
+      data-mdb-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Carousel wrapper -->
+</header>
+
+<!--Main layout-->
+<main class="mt-5">
+  <div class="container">
+    <!--Section: Content-->
+    <section>
+      <div class="row">
+        <div class="col-md-6 gx-5 mb-4">
+          <div
+            class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
+            data-mdb-ripple-color="light"
+          >
+            <img
+              src="../../../assets/images/about-us.jpg.crdownload"
+              class="img-fluid"
+              width="500"
+              height="400"
+            />
+            <a href="#!">
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.15)"
+              ></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 gx-5 mb-4">
+          <h4><strong>Nuestra empresa</strong></h4>
+          <p class="text-muted">
+            Somos una empresa que busca que el cliente se sienta como un dios al
+            utilizar nuestros servicios , con alto conocimiento en la producción
+            y venta de comidas, la experiencia adquirida a través de los años,
+            nos da el conocimiento para valorar la importancia del cliente,
+            quien es el motivo de nuestros esfuerzos, y así llegar a ustedes con
+            la seguridad de poder ofrecerles nuestros productos de excelente
+            calidad.
+          </p>
+          <hr />
+          <p>
+            <strong>
+              Entra y registrá y disfruta de nuestros servicios como los
+              mismísimos dioses
+            </strong>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h4><strong class="pt-4">Nuestros Servicios</strong></h4>
+          <p class="pt-4">
+            Es una aplicación para los servicios de un restaurante, en el cual
+            se puede registrar el usuario pedir su comida a domicilio o de
+            manera presencial. Es un restaurante de comida extravagante con
+            varios platos divididos por secciones. Se puede pedir la comida
+            agregar adiciones.
+          </p>
+          <p>
+            con responsabilidad y cumplimiento. Contamos con excelente calidad
+            humana que les brindara la atención apropiada, para de esta manera
+            poder llegar a saber y entender sus gustos y necesidades. El hecho
+            de contar con ustedes como nuestros clientes es motivo de
+            satisfacción.
+          </p>
+        </div>
+
+        <div class="col-md-6 gx-5 mb-4">
+          <div
+            class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
+            data-mdb-ripple-color="light"
+          >
+            <img
+              src="../../../assets/images/bebidas-landing.jpg"
+              alt=""
+              class="img-fluid"
+            />
+            <a href="#!">
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.15)"
+              ></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+    <hr class="my-5" />
+  </div>
+  <div class="container-fluid parallax bg-image bg-image-0">
+    <div class="mask"></div>
+  </div>
+  <hr class="my-5" />
+  <app-footer></app-footer>
+</main>

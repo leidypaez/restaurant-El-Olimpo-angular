@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'LewishamShadowed';
+    src:url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.woff') format('woff'), 
+        url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.svg') format('svg'), 
+        /* LewishamShadowed.ttf.svg#LewishamShadowed */
+        url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.eot'),
+        /* 'LewishamShadowed.ttf.eot */
+        url('../../../assets/font/webfonts_LewishamShadowed/webfonts.ffonts.net.htm') format('embedded-opentype'); 
+        /* LewishamShadowed.ttf.eot?#iefix */
+    font-style: normal;
+}
+
+*{
+    font-family: 'LewishamShadowed';
+}
+
+body, 
+main::before{
+    background-image: url('../../../assets/images/login-buffet.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position:bottom;
+}
+
+main{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.808);
+    margin-top: 4rem;
+    margin-left: 28.7rem;
+    margin-right: 30rem;
+    color: #fff;
+}
+
+main::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(1px);
+  z-index: -1;
+  text-align: center;
+}
+
+h2{
+    font-size: 2.2rem;
+    text-shadow: 4px 4px 4px rgb(12, 116, 38);
+}
+
+form{
+    padding-left: 2.1rem;
+    width: 23rem;
+}
+
+.form-control{
+    color: #fff;
+    border-bottom: 1px solid rgb(225, 231, 225);
+}
+
+h4{
+    text-align: left;
+    text-shadow: 1px 1px 1px black;
+}
+
+.label-text{
+    color: #fff;
+    letter-spacing: 0.7px;
+    font-size: 1.1rem;
+}
+
+.btn{
+    width: 8rem;
+    height: 2.2rem;
+    padding-top: 0.4rem;
+    padding-left: 0.6rem;
+    background-color: rgb(0, 128, 0);
+    margin-left: 12.9rem;
+}
+
+.btn span{
+    color: #fff;
+    font-weight: 545;
+    letter-spacing: 0.4px;
+    font-size: medium;
+}
+
+@media only screen and (max-width: 1150px) {
+    main{
+        margin-left: 23rem;
+        margin-right: 23rem;
+    }
+    form{
+        padding-left: 3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    main{
+        margin-left: 21rem;
+        margin-right: 21rem;
+    }
+    form{
+        padding-left: 3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+    main{
+        margin-left: 19rem;
+        margin-right: 19rem;
+    }
+    form{
+        padding-left: 3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    main{
+        margin-left: 17rem;
+        margin-right: 17rem;
+    }
+    form{
+        padding-left: 3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    main{
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+    form{
+        padding-left: 3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 840px){
+    main{
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+    form{
+        padding-left: 3.8rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 765px){
+    main{
+        margin-left: 11rem;
+        margin-right: 11rem;
+    }
+    form{
+        padding-left: 4rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    main{
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+    form{
+        padding-left: 4rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 630px){
+    main{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    form{
+        padding-left: 3.3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    main{
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+    form{
+        padding-left: 4rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    main{
+        margin-left: 2.8rem;
+        margin-right: 2.8rem;
+    }
+    form{
+        padding-left: 1.4rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 11.6rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    main{
+        margin-top: 6rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    form{
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        width: 20rem;
+    }
+    h4{
+        padding-left: 0.8rem;
+    }
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 11.6rem;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    main{
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+    form{
+        padding-left: 0.4rem;
+        padding-right: 1rem;
+        width: 20rem;
+    }
+    h4{
+        padding-left: 0.8rem;
+    }
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10.7rem;
+    }
+
+}
+
+@media only screen and (max-width: 330px) {
+    main{
+        margin-top: 2.2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
+    }
+    form{
+        padding-left: 0.4rem;
+        padding-right: 4rem;
+        width: 20rem;
+    }
+    h4{
+        padding-left: 0.8rem;
+    }
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 8rem;
+    }
+
+}
