@@ -34,11 +34,11 @@
           <p class="card-text">
             {{item.price | currency}} COP
           </p>
-          <a class="btn btn-primary">Agregar</a>
+          <a class="btn btn-primary" (click)="add(item)">Agregar</a>
            <!-- (click)="agregar(item)" -->
         </div>
       </div>
     </div>
   </div>
-
 </div>
+<app-shopping-list></app-shopping-list>

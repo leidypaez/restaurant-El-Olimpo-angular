@@ -20,6 +20,7 @@ import { PoliciesAndPrivacyComponent } from './component/policies-and-privacy/po
 import { EventsComponent } from './component/events/events.component';
 import { OrdersComponent } from './component/orders/orders.component';
 import { ChatComponent } from './component/chat/chat.component';
+import { ShoppingListComponent } from './component/shopping-list/shopping-list.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ChatComponent } from './component/chat/chat.component';
     EventsComponent,
     OrdersComponent,
     ChatComponent,
+    ShoppingListComponent,
   ],
   imports: [
     BrowserModule,

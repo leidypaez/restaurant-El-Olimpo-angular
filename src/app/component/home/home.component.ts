@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiOlimpoService } from '../../service/api-olimpo.service';
+import { CarritoService } from 'src/app/services/carrito.service';
+
 
 @Component({
   selector: 'app-home',
@@ -11,22 +12,16 @@ export class HomeComponent implements OnInit {
   public dishes: any;
   public id: any
 
-  constructor(private service:ApiOlimpoService) {}
+  constructor(private shoppingCart:CarritoService) {}
 
   ngOnInit(): void { }
 
-  getDishes(){
-    this.service.getDishes().subscribe((data : any) =>{
-      this.dishes = data.dishes
-    })
+  add(item:any) {
+    this.shoppingCart.addShoppingCart(item)
+    console.log(this.shoppingCart);
   }
 
-  removeDishes(){
-    this.service.removeDishes().subscribe(() =>{
-      this.id = this.id.filter((dishes: { id: any; }) => dishes.id != this.dishes.id)
-    })
-  }
-
+  // filtro de cada uno de los platos
   type:string = 'tradicional';
   changeType(text:string) {
     this.type = text;

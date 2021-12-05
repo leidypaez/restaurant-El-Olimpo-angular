@@ -2,18 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { CarritoService } from 'src/app/services/carrito.service';
 
 @Component({
-  selector: 'app-carrito',
-  templateUrl: './carrito.component.html',
-  styleUrls: ['./carrito.component.css']
+  selector: 'app-shopping-list',
+  templateUrl: './shopping-list.component.html',
+  styleUrls: ['./shopping-list.component.css']
 })
-export class CarritoComponent implements OnInit {
+export class ShoppingListComponent implements OnInit {
 
   constructor(public cart:CarritoService) { }
 
   ngOnInit(): void {
   }
 
-  eliminaritem(id:number){
+    eliminaritem(id:number){
     console.log(id)
     this.cart.eliminar(id)
   }
