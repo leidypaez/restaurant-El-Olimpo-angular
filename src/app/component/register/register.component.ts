@@ -9,12 +9,14 @@ import { UserI } from 'src/app/service/models/interface.user';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+
+  passwordMatch = true;
   
-  public usuario = new FormGroup({
-    username: new FormControl('', Validators.required),
-    email: new FormControl('', Validators.required),
-    password: new FormControl('', Validators.required),
-    checked: new FormControl('', Validators.required),
+  public formRegister = new FormGroup({
+    email:    new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [Validators.required, Validators.minLength(6)]),
+    checked:  new FormControl('', [Validators.required, Validators.minLength(6)]),
+    username: new FormControl('', [Validators.required, Validators.nullValidator])
   });
   
   constructor(private service: ApiOlimpoService) { }
@@ -23,11 +25,9 @@ export class RegisterComponent implements OnInit {
 
   onSubmit () {
 
-    const { username, email, password, checked } = this.usuario.value;
-    if(password !== checked)  return
-    
+    const { username, email, password, checked } = this.formRegister.value;
+    if(password !== checked){ this.passwordMatch = false; return }
     const body : UserI = { username, email, password }
-    console.log(body);
     
     this.service.register(body)
     .subscribe((data : any) =>{
@@ -35,10 +35,16 @@ export class RegisterComponent implements OnInit {
     });      
   }
 
+  get user () { return this.formRegister.get('username') }
+  get email () { return this.formRegister.get('email') }
+  get password () { return this.formRegister.get('password') }
+  get checker () { return this.formRegister.get('checked') }
+  get noMatch () { return this.passwordMatch }
+
 //   Registrar(datos:any){
 //     var post = {
 //       host:this.peticion.urlLocal,
-//       path:'/usuarios/Guardar',
+//       path:'/formRegisters/Guardar',
 //       data:{
 //         nombre:datos.nombre,
 //         email:datos.email,

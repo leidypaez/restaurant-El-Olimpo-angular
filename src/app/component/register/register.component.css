@@ -10,7 +10,7 @@
     font-style: normal;
 }
 
-*{
+/*{
     font-family: 'LewishamShadowed';
 }
 
@@ -357,4 +357,42 @@ h4{
         margin-left: 8rem;
     }
 
+}*/
+
+.img-register {
+    width: 100vw;
+    height: 100vh;
+}
+
+.mask {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.containerForm {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+}
+
+form input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(225, 231, 225)
+
+}
+
+button[type="submit"] {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    background: #681d1d ;
+    border: 1px solid #551919;
+    
+}
+
+button[type="submit"] :hover {
+    background: #551919 ;
 }
