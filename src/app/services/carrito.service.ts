@@ -34,7 +34,7 @@ export class CarritoService {
 
   addShoppingCart(item:any){
     this.dataShopping.push(item)
-    localStorage.setItem('Shopping', JSON.stringify(this.dataShopping))
+    localStorage.setItem('carrito', JSON.stringify(this.dataShopping))
     console.log(this.dataShopping)
     this.calculartotales()
   }
