@@ -35,11 +35,11 @@
             </div>
             
             <div class="text-danger my-3" *ngIf="user || email || password || checker">
-              <p *ngIf="user && user.invalid && user.touched">user name input field is not valid</p>
-              <p *ngIf="email && email.invalid && email.touched">email input field is not valid</p>
-              <p *ngIf="password && password.invalid && password.touched">password input field  is not valid</p>
-              <p *ngIf="checker && checker.invalid && checker.touched">password input field  is not valid</p>
-              <p *ngIf="!noMatch">password not match</p>
+              <p *ngIf="user && user.invalid && user.touched">Nombre de usuario inválido</p>
+              <p *ngIf="email && email.invalid && email.touched">Correo eléctronico inválido</p>
+              <p *ngIf="password && password.invalid && password.touched">Contraseña inválida</p>
+              <p *ngIf="checker && checker.invalid && checker.touched">Contraseña inválida</p>
+              <p *ngIf="!noMatch">Contraseña no coincide</p>
             </div>
 
             <div class="my-3">

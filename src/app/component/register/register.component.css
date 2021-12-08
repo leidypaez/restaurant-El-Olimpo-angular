@@ -1,15 +1,3 @@
-@font-face {
-    font-family: 'LewishamShadowed';
-    src:url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.woff') format('woff'), 
-        url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.svg') format('svg'), 
-        /* LewishamShadowed.ttf.svg#LewishamShadowed */
-        url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.eot'),
-        /* 'LewishamShadowed.ttf.eot */
-        url('../../../assets/font/webfonts_LewishamShadowed/webfonts.ffonts.net.htm') format('embedded-opentype'); 
-        /* LewishamShadowed.ttf.eot?#iefix */
-    font-style: normal;
-}
-
 /*{
     font-family: 'LewishamShadowed';
 }
@@ -365,12 +353,12 @@ h4{
 }
 
 .mask {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.233);
 }
 
 .containerForm {
     width: 400px;
-    background-color: rgba(255, 255, 255, 0.04);
+    background-color: rgba(0, 0, 0, 0.76);
     box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
 }
 
