@@ -11,19 +11,18 @@ import { LogInI } from 'src/app/service/models/interface.login';
 
 export class LoginComponent implements OnInit {
 
-  public usuario = new FormGroup({
-    email: new FormControl('', Validators.required),
-    password: new FormControl('', Validators.required)
+  public formLogin = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [Validators.required, Validators.minLength(6)])
   });
 
   constructor(private service: ApiOlimpoService) {
-      console.log({ "email": "user01@gmail.com", "password": "@user@" });
    }
 
   ngOnInit(): void { }
 
   onSubmit () {
-    const { email, password } = this.usuario.value;
+    const { email, password } = this.formLogin.value;
     const body : LogInI = { email, password }
    
     this.service.logIn(body)
@@ -31,5 +30,8 @@ export class LoginComponent implements OnInit {
       console.log(data)
     });      
   }
+
+  get user () { return this.formLogin.get('email') }
+  get password () { return this.formLogin.get('password') }
 
 }
