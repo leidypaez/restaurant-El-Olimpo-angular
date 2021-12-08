@@ -21,6 +21,8 @@ import { EventsComponent } from './component/events/events.component';
 import { OrdersComponent } from './component/orders/orders.component';
 import { ChatComponent } from './component/chat/chat.component';
 import { ShoppingListComponent } from './component/shopping-list/shopping-list.component';
+import { InformacionComponent } from './component/informacion/informacion.component';
+import { SobreNosotrosComponent } from './component/sobre-nosotros/sobre-nosotros.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { ShoppingListComponent } from './component/shopping-list/shopping-list.c
     OrdersComponent,
     ChatComponent,
     ShoppingListComponent,
+    InformacionComponent,
+    SobreNosotrosComponent,
   ],
   imports: [
     BrowserModule,

@@ -45,6 +45,16 @@ h4 strong{
     justify-content: center;
     display: flex;
 }
+.texto{
+  font-size: 1.1rem;
+}
+
+.informacion{
+  border: solid 1px rgb(114, 113, 113);
+  border-radius: 6px;
+  text-align: justify;
+  box-shadow: 2px 2px 3px 3px rgb(122, 122, 122);
+}
 
 header .bg-image {
   height: 100vh;
@@ -76,4 +86,39 @@ header .bg-image {
   height: 100%;
   overflow: hidden;
   background-attachment: fixed;
+}
+
+@media only screen and (max-width:750px){
+  iframe{
+    height: 37rem;
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width:650px){
+  iframe{
+    height: 31rem;
+    width: 29rem;
+  }
+}
+
+@media only screen and (max-width:550px){
+  iframe{
+    height: 27rem;
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width:450px){
+  iframe{
+    height: 23rem;
+    width: 21rem;
+  }
+}
+
+@media only screen and (max-width:370px){
+iframe{
+  height: 21rem;
+  width: 18rem;
+  }
 }

@@ -22,11 +22,11 @@
 <div class="container">
   <div class="row">
   <!-- | filter:'category':criterio -->
-  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 section-target" *ngFor="let item of data | filter:'category':type">
+  <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 section-target" *ngFor="let item of data | filter:'category':type">
       <div class="card">
         <img
           src="{{item.imageUrl}}"
-          class="img-fluid card-img-top" width="600"
+          class="img-fluid card-img-top"
         />
         <div class="card-body">
           <h5 class="card-title">{{item.name}}</h5>

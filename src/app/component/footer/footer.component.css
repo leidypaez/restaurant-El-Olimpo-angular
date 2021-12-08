@@ -1,6 +1,15 @@
 .bg-dark {
   background-color: #681d1d!important;
 }
+.importante{
+  text-align: center;
+  padding-left: 11rem;
+  padding-right: 11rem;
+  padding-top: 1vh;
+  text-align: justify;
+  letter-spacing: 0.4px;
+  font-size: 1.1rem;
+  }
 
 footer .copy {
   background-color: rgba(10, 10, 10, 0.2);
@@ -13,4 +22,18 @@ footer a:hover {
 
 footer {
   text-align: center;
+}
+@media only screen and(max-width: 992px){
+  .importante{
+    padding-left: 25vh;
+    padding-right: 25vh;
+    padding-top: 1vh;
+    }
+}
+
+@media only screen and (max-width: 800px){
+  .importante{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
