@@ -1,4 +1,11 @@
-.total {
-  font-size: 19px;
-  margin-left: 55px;
+.text-title{
+    font-size: 1.1rem;
+}
+.text-table{
+    font-size: 1rem;
+}
+.total{
+    border: solid 1px rgb(63, 62, 62);
+    margin-left: 15rem;
+    margin-right: 15rem;
 }

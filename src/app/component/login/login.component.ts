@@ -30,13 +30,13 @@ export class LoginComponent implements OnInit {
     this.service.logIn(body).subscribe((data : any) => { 
 
       if (data.token) { 
-        this.router.navigate(['/home']); 
         localStorage.setItem('x-olimpo-access', data.token)
+        this.router.navigate(['/home']); 
       }
       
     }, (e) => {
-      this.notUser = false;
       localStorage.removeItem('x-olimpo-access')
+      this.notUser = false;
     });      
   }
   

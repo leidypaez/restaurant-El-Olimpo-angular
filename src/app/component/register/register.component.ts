@@ -13,7 +13,7 @@ import { UserI } from 'src/app/service/models/interface.user';
 export class RegisterComponent implements OnInit {
 
   passwordMatch = true;
-
+  
   public formRegister = new FormGroup({
     email:    new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required, Validators.minLength(6)]),
