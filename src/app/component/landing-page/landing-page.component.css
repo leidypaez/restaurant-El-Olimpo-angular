@@ -2,6 +2,16 @@ body {
   margin: 0;
 }
 
+.titulo{
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.subtitulo{
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
 .nav-item {
   padding: 0;
   margin: 0 5px;
