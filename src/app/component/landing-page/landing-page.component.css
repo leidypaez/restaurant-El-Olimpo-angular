@@ -41,6 +41,24 @@ body {
             }
           }
 
+.nav-title{
+  border-radius: 3px;
+}
+  
+.nav-title:hover{
+  background-color: rgba(107, 107, 116, 0.849);
+}
+
+.titulo{
+  font-size: 3rem;
+  text-shadow: 3px 2px 1px #000000;
+}
+
+.eslogan{
+font-size: 2.2rem;
+letter-spacing: 0.4px;
+}
+
 h4 strong{
     justify-content: center;
     display: flex;
@@ -66,14 +84,16 @@ header .bg-image {
 }
 
 .parallax {
-  height: 60vh;
+  height: 80vh;
   position: relative;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.mask {
-  background-color: rgba(0, 0, 0, 0.5);
+.text-parallax{
+  font-size: 2.3rem;
+  text-shadow: 3px 3px 2px #3a0d0d;
+  font-style: italic;
 }
 
 .mask {
@@ -86,12 +106,76 @@ header .bg-image {
   height: 100%;
   overflow: hidden;
   background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mapa{
+  border: solid 2px rgb(128, 127, 127);
+  margin: 10rem;
+  box-shadow: 3px 3px 4px 4px rgb(122, 122, 122);
+}
+.mapa:hover{
+  /* background-color: rgb(241, 234, 169); */
+  background-color: rgb(212, 202, 202);
+}
+
+@media only screen and (max-width:1150px){
+  iframe{
+    height: 40rem;
+    width: 38rem;
+  }
+  .mapa{
+    margin: 9.5rem;
+  }
+}
+
+@media only screen and (max-width:1050px){
+  iframe{
+    height: 37rem;
+    width: 35rem;
+  }
+  .mapa{
+    margin: 8.5rem;
+  }
+}
+
+@media only screen and (max-width:950px){
+  iframe{
+    height: 37rem;
+    width: 35rem;
+  }
+  .mapa{
+    margin: 7.5rem;
+  }
+}
+
+@media only screen and (max-width:950px){
+  iframe{
+    height: 37rem;
+    width: 35rem;
+  }
+  .mapa{
+    margin: 4.5rem;
+  }
+}
+
+@media only screen and (max-width:850px){
+  iframe{
+    height: 37rem;
+    width: 35rem;
+  }
+  .mapa{
+    margin: 1.5rem;
+  }
 }
 
 @media only screen and (max-width:750px){
   iframe{
     height: 37rem;
     width: 35rem;
+  }
+  .mapa{
+    margin: 1rem;
   }
 }
 
@@ -100,12 +184,18 @@ header .bg-image {
     height: 31rem;
     width: 29rem;
   }
+  .mapa{
+    margin: 0.6rem;
+  }
 }
 
 @media only screen and (max-width:550px){
   iframe{
     height: 27rem;
     width: 25rem;
+  }
+  .mapa{
+    margin: 0.4rem;
   }
 }
 
@@ -114,6 +204,9 @@ header .bg-image {
     height: 23rem;
     width: 21rem;
   }
+  .mapa{
+    margin: 0.2rem;
+  }
 }
 
 @media only screen and (max-width:370px){
@@ -121,4 +214,25 @@ iframe{
   height: 21rem;
   width: 18rem;
   }
+.mapa{
+  margin: 0rem;
 }
+}
+
+@media only screen and (max-width:340px){
+  .mapa{
+    margin: 0rem;
+  }
+  }
+  @media only screen and (max-width:300px){
+    iframe{
+      height: 18rem;
+      width: 15rem;
+      }
+   
+    .mapa{
+      margin: 0rem;
+    }
+    }
+  
+

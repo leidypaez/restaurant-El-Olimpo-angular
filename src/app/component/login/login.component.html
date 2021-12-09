@@ -15,12 +15,12 @@
           <form class="formulario" class="d-flex flex-column align-content-around " [formGroup]="formLogin" (ngSubmit)="onSubmit()">
 
             <div class="form-outline my-3">
-              <input id="email" type="email" formControlName="email" class="form-control form-control-lg text-white" />
+              <input id="email" type="email" formControlName="email" class="form-control form-control-lg text-white" autocomplete="off"/>
               <label for="email" class="form-label"><span class="label-text  text-white font-weight-normal">Correo Electronico</span></label>
             </div>
             
             <div class="form-outline my-3">
-              <input id="password" type="password" formControlName="password" class="form-control form-control-lg text-white" />
+              <input id="password" type="password" formControlName="password" class="form-control form-control-lg text-white" autocomplete="off"/>
               <label for="password" class="form-label"><span class="label-text  text-white font-weight-normal">Contraseña</span></label>
             </div>
             

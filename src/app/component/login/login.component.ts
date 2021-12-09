@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
 import { ApiOlimpoService } from 'src/app/service/api-olimpo.service';
 import { LogInI } from 'src/app/service/models/interface.login';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,7 @@ export class LoginComponent implements OnInit {
     password: new FormControl('', [Validators.required, Validators.minLength(6)])
   });
 
-  constructor(private service: ApiOlimpoService) {
+  constructor(private service: ApiOlimpoService, private router:Router) {
    }
 
   ngOnInit(): void { }
@@ -28,6 +29,7 @@ export class LoginComponent implements OnInit {
     this.service.logIn(body)
     .subscribe((data : any) =>{
       console.log(data)
+      this.router.navigate(["/home"])
     });      
   }
 

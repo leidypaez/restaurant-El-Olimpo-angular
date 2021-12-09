@@ -1,7 +1,15 @@
 
-.menu{
-    background: #4E1B19;
+  .menu{
+    background: #6d1815;
+    border-radius: 5px;
   }
+  .text-menu{
+    border-radius: 5px;
+  }
+  .text-menu:hover{
+  background-color: rgb(107, 77, 73);
+  transition: all 600ms;
+}
 
   .postres{
     color: black !important;
@@ -26,6 +34,10 @@
 .icon-cart {
   color: white;
   font-size: 27px;
+}
+
+.log-out{
+  cursor: pointer;
 }
 
 .icon-texto {

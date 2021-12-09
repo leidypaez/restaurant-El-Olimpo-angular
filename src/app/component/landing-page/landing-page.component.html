@@ -24,13 +24,13 @@
         <!-- Left links -->
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-white" [routerLink]="['/signIn']">
+            <a class="nav-link text-white nav-title" [routerLink]="['/signIn']">
               Iniciar sesión
             </a>
           </li>
           <!-- Navbar dropdown -->
           <li class="nav-item">
-            <a class="nav-link text-white" [routerLink]="['/signUp']">
+            <a class="nav-link text-white nav-title" [routerLink]="['/signUp']">
               Registrarse
             </a>
           </li>
@@ -64,10 +64,10 @@
         <div class="mask" style="background-color: rgba(2, 2, 2, 0.6)">
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white text-center">
-              <h1 class="mb-3">El Olimpo</h1>
-              <h5 class="mb-4">
-                Disfruta la mejor comida hecha por los mismisimos dioses
-              </h5>
+              <h1 class="mb-3 titulo" style="font-style: italic;">EL OLIMPO</h1>
+              <h4 class="mb-4 eslogan">
+                ¡El placer de comer como los dioses!
+              </h4>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white text-center">
               <h2 style="background-color: rgba(15, 15, 15, 0.3)">
-                Puedes disfrutas de maravillosos cenas
+                Un oasis de sabores que podrás disfrutar y degustar..
               </h2>
             </div>
           </div>
@@ -101,7 +101,7 @@
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white text-center">
               <h2 style="background-color: rgba(65, 41, 16, 0.3)">
-                Disfruta de los eventos con un delicioso postre
+                Encontrarás la diferencia en nuestros gustos y tradiciones..
               </h2>
             </div>
           </div>
@@ -146,7 +146,7 @@
           >
             <img
               src="../../../assets/images/about-us.jpg.crdownload"
-              class="img-fluid animate__animated animate__fadeInLeft"
+              class="img-fluid animate__animated animate__fadeInLeft animate__slow	2s" 
               width="500"
               height="400"
             />
@@ -188,7 +188,7 @@
             <img
               src="../../../assets/images/bebidas-landing.jpg"
               alt=""
-              class="img-fluid pt-3 animate__animated animate__slideInRight"
+              class="img-fluid pt-3 animate__animated animate__slideInRight animate__slow	2s"
             />
             <a href="#!">
               <div
@@ -204,17 +204,21 @@
     <hr class="my-5" />
   </div>
   <div class="container-fluid parallax bg-image bg-image-0">
-    <div class="mask"></div>
+    <div class="mask">
+      <div class="d-flex justify-content-center align-items-center h-100 text-parallax">
+        <p class="text-white mb-0 animate__animated animate__backInUp animate__slow	2s">Más allá del límite del buen gusto..</p>
+      </div>
+    </div>
   </div>
   <hr class="my-5" />
     <!--Section: Content-->
     <section class="text-center mapa">
       <h2>Ubicación</h2>
-      <div class="pb-5">
+      <div class="pb-4">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6032977146174!2d-74.0532805859099!3d4.664606043269953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a604997e3dd%3A0x2367a38e840bc03e!2zQ3JhLiA5ICM4MjE1LCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1638226152206!5m2!1ses!2sco"
-          width="750"
-          height="450"
+          width="850"
+          height="500"
           style="border: 0"
           allowfullscreen=""
           loading="lazy">

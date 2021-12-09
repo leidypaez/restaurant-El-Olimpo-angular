@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ApiOlimpoService } from 'src/app/service/api-olimpo.service';
 import { UserI } from 'src/app/service/models/interface.user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -19,7 +20,7 @@ export class RegisterComponent implements OnInit {
     username: new FormControl('', [Validators.required, Validators.nullValidator])
   });
   
-  constructor(private service: ApiOlimpoService) { }
+  constructor(private service: ApiOlimpoService, private router:Router) { }
 
   ngOnInit(): void { }
 
@@ -32,6 +33,7 @@ export class RegisterComponent implements OnInit {
     this.service.register(body)
     .subscribe((data : any) =>{
       console.log(data)
+      this.router.navigate(["/signIn"])
     });      
   }
 

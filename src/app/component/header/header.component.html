@@ -3,7 +3,7 @@
       <div class="container-fluid">
         <img src="../../../assets/images/logo-olimpo-png.png" width="60" height="50" alt="">
         <p class="color-raya">pp</p>
-        <a class="navbar-brand text-white" [routerLink]="['/home']">El Olimpo</a>
+        <a class="navbar-brand text-white" [routerLink]="['/home']">EL OLIMPO</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -15,26 +15,26 @@
           >
           <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <div class="collapse navbar-collapse filtro" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" [routerLink]="['/home']" >Menú</a>
+              <a class="nav-link active text-white text-menu" aria-current="page" [routerLink]="['/home']" >Menú</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" [routerLink]="['/orders']" >Pedidos</a>
+              <a class="nav-link text-white text-menu" [routerLink]="['/orders']" >Pedidos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" [routerLink]="['/events']" >Eventos</a>
+              <a class="nav-link text-white text-menu" [routerLink]="['/events']" >Eventos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" [routerLink]="['/informacion']" >Información</a>
+              <a class="nav-link text-white text-menu" [routerLink]="['/informacion']" >Información</a>
             </li>
           </ul>
           <div>
             <a class="nav-link" [routerLink]="['/carrito']"><i class="fas fa-shopping-cart icon-cart"></i></a>
           </div>
           <span class="navbar-text text-white">
-            <i class="fas fa-sign-out-alt icon"></i>
+            <i class="fas fa-sign-out-alt icon log-out" [routerLink]="['/']"></i>
           </span>
         </div>
       </div>
