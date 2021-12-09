@@ -19,7 +19,6 @@ export class RegisterComponent implements OnInit {
     checked:  new FormControl('', [Validators.required, Validators.minLength(6)]),
     username: new FormControl('', [Validators.required, Validators.nullValidator])
   });
-
   constructor(private service: ApiOlimpoService, private router:Router) { }
 
   ngOnInit(): void { }

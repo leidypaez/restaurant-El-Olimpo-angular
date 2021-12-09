@@ -57,10 +57,6 @@ body {
   border-radius: 3px;
 }
 
-.nav-title:hover{
-  background-color: rgba(107, 107, 116, 0.849);
-}
-
 .titulo{
   font-size: 3rem;
   text-shadow: 3px 2px 1px #000000;
@@ -247,3 +243,21 @@ iframe{
     margin: 0rem;
   }
 }
+
+@media only screen and (max-width:340px){
+  .mapa{
+    margin: 0rem;
+  }
+  }
+  @media only screen and (max-width:300px){
+    iframe{
+      height: 18rem;
+      width: 15rem;
+      }
+
+    .mapa{
+      margin: 0rem;
+    }
+    }
+
+

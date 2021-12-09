@@ -1,6 +1,10 @@
 
-.menu{
+  .menu{
     background: #4E1B19;
+    border-radius: 5px;
+  }
+  .text-menu{
+    border-radius: 5px;
   }
 
   .nav-item {
@@ -38,6 +42,10 @@
 .icon-cart {
   color: white;
   font-size: 27px;
+}
+
+.log-out{
+  cursor: pointer;
 }
 
 .icon-texto {

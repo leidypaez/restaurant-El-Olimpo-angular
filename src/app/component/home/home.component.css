@@ -2,10 +2,16 @@
   color: brown;
   font-weight: bold;
   font-weight: bold;
+  font-size: 1.4rem;
 }
 
 .filtros-letra:hover {
   opacity: 0.8;
+}
+
+.text-filter{
+  border: solid 1px rgb(124, 123, 123);
+  border-radius: 16px;
 }
 
 .card {
