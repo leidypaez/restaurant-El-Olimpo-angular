@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiOlimpoService } from 'src/app/service/api-olimpo.service';
 import { CarritoService } from 'src/app/services/carrito.service';
-
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
 
   public dishes: any;

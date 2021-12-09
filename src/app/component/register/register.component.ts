@@ -34,7 +34,8 @@ export class RegisterComponent implements OnInit {
     this.service.register(body)
     .subscribe((data : any) =>{
       if(data.user) this.router.navigate(['/signIn']);
-    });     
+    });   
+      
   }
 
   get user () { return this.formRegister.get('username') }

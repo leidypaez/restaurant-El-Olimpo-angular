@@ -4,9 +4,6 @@ import { ApiOlimpoService } from 'src/app/service/api-olimpo.service';
 import { LogInI } from 'src/app/service/models/interface.login';
 import { Router } from '@angular/router';
 
-// import { HomeComponent } from "../home/home.component";
-// import { retry } from 'rxjs';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -38,7 +35,7 @@ export class LoginComponent implements OnInit {
       }
       
     }, (e) => {
-      this.notUser = false 
+      this.notUser = false;
       localStorage.removeItem('x-olimpo-access')
     });      
   }
