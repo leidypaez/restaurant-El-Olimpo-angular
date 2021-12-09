@@ -25,13 +25,16 @@
             </div>
             
             <div class=" my-3">
+              <a class="nav-link text-white" [routerLink]="['/signUp']">Registrarse</a>
+            </div>
+
+            <div class=" my-3">
               <p class="text-danger" *ngIf="user && user.invalid && user.touched">email input field is not valid</p>
               <p class="text-danger" *ngIf="password && password.invalid && password.touched">password input field  is not valid</p>
+              <p class="text-danger" *ngIf="!notUser">email or password wrong</p>
             </div>
 
             <div class="my-3">
-              <!-- <button class="btn btn-info text-black btn-lg btn-block login-button" type="submit"
-                [routerLink]="['/home']" routerLinkActive="router-link-active"><span>Iniciar</span></button> -->
               <button class="btn btn-info text-black btn-lg btn-block login-button" type="submit"
                 [disabled]="formLogin.invalid"><span class="text-white">Iniciar</span></button>
             </div>

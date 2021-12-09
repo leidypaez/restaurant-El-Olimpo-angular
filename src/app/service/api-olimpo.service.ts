@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { DishI } from './models/interface.dish';
@@ -14,7 +14,6 @@ export class ApiOlimpoService {
   private url = 'http://127.0.0.1:3000/api/v1'
 
   constructor(private http: HttpClient) { }
-
   
   logIn (body : LogInI) : Observable <any> {
     const urlNew = this.url + '/auth/signIn/';
@@ -31,8 +30,19 @@ export class ApiOlimpoService {
   }
   
   getDishes() : Observable <DishI[]> {
-    const urlNew = this.url + '/dish/';
-    return this.http.get<DishI[]>(urlNew);
+
+    return this.http.get<DishI[]>(
+      `${this.url}/dish/`, 
+      { headers: new HttpHeaders({
+        'content-type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('x-olimpo-access')}`
+      })}
+    );
+
+    // console.log(localStorage.getItem('x-olimpo-access'))
+
+    // const urlNew = this.url + '/user';
+    // return this.http.get(urlNew);
   }
   
   removeDishes() : Observable <DishI[]> {

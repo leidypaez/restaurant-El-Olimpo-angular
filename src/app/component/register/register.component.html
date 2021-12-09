@@ -33,6 +33,10 @@
               <input id="checked" type="password" formControlName="checked" class="form-control form-control-lg text-white" />
               <label for="checked" class="form-label"><span class="label-text text-white font-weight-normal">Confirmar Contraseña</span></label>
             </div>
+
+            <div class=" my-3">
+              <a class="nav-link text-white" [routerLink]="['/signIn']">Iniciar Sesión</a>
+            </div>
             
             <div class="text-danger my-3" *ngIf="user || email || password || checker">
               <p *ngIf="user && user.invalid && user.touched">user name input field is not valid</p>

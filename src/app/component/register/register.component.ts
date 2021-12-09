@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ApiOlimpoService } from 'src/app/service/api-olimpo.service';
 import { UserI } from 'src/app/service/models/interface.user';
 
@@ -8,6 +9,7 @@ import { UserI } from 'src/app/service/models/interface.user';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
+
 export class RegisterComponent implements OnInit {
 
   passwordMatch = true;
@@ -19,7 +21,7 @@ export class RegisterComponent implements OnInit {
     username: new FormControl('', [Validators.required, Validators.nullValidator])
   });
   
-  constructor(private service: ApiOlimpoService) { }
+  constructor(private service: ApiOlimpoService, private router: Router) { }
 
   ngOnInit(): void { }
 
@@ -28,11 +30,11 @@ export class RegisterComponent implements OnInit {
     const { username, email, password, checked } = this.formRegister.value;
     if(password !== checked){ this.passwordMatch = false; return }
     const body : UserI = { username, email, password }
-    
+     
     this.service.register(body)
     .subscribe((data : any) =>{
-      console.log(data)
-    });      
+      if(data.user) this.router.navigate(['/signIn']);
+    });     
   }
 
   get user () { return this.formRegister.get('username') }
@@ -40,23 +42,5 @@ export class RegisterComponent implements OnInit {
   get password () { return this.formRegister.get('password') }
   get checker () { return this.formRegister.get('checked') }
   get noMatch () { return this.passwordMatch }
-
-//   Registrar(datos:any){
-//     var post = {
-//       host:this.peticion.urlLocal,
-//       path:'/formRegisters/Guardar',
-//       data:{
-//         nombre:datos.nombre,
-//         email:datos.email,
-//         password:datos.password,
-//         confirmar:datos.confirmar
-//       }
-//     }
-
-//    this.peticion.Post(post.host + post.path,post.data).then((res:any) => {
-//      console.log(res)
-//    })
-//   }
-
   
 }
