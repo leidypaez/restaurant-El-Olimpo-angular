@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ApiOlimpoService } from 'src/app/service/api-olimpo.service';
 import { UserI } from 'src/app/service/models/interface.user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -11,15 +12,15 @@ import { UserI } from 'src/app/service/models/interface.user';
 export class RegisterComponent implements OnInit {
 
   passwordMatch = true;
-  
+
   public formRegister = new FormGroup({
     email:    new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required, Validators.minLength(6)]),
     checked:  new FormControl('', [Validators.required, Validators.minLength(6)]),
     username: new FormControl('', [Validators.required, Validators.nullValidator])
   });
-  
-  constructor(private service: ApiOlimpoService) { }
+
+  constructor(private service: ApiOlimpoService, private router:Router) { }
 
   ngOnInit(): void { }
 
@@ -28,11 +29,12 @@ export class RegisterComponent implements OnInit {
     const { username, email, password, checked } = this.formRegister.value;
     if(password !== checked){ this.passwordMatch = false; return }
     const body : UserI = { username, email, password }
-    
+
     this.service.register(body)
     .subscribe((data : any) =>{
       console.log(data)
-    });      
+      this.router.navigate(["/signIn"])
+    });
   }
 
   get user () { return this.formRegister.get('username') }
@@ -58,5 +60,5 @@ export class RegisterComponent implements OnInit {
 //    })
 //   }
 
-  
+
 }
