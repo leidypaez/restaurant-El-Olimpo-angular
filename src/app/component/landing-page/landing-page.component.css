@@ -2,18 +2,6 @@ body {
   margin: 0;
 }
 
-.nav-item {
-  padding: 0;
-  margin: 0 5px;
-}
-
-.nav-item:hover {
-  padding: 0;
-  color: #8f5657;
-  transform: scale(1.2, 1.2);
-  background-color: transparent;
-}
-
 .navbar{
     background-color: #0e0e0e72;
             }
@@ -55,6 +43,10 @@ body {
 
 .nav-title{
   border-radius: 3px;
+}
+  
+.nav-title:hover{
+  background-color: rgba(107, 107, 116, 0.849);
 }
 
 .titulo{
@@ -231,33 +223,16 @@ iframe{
   .mapa{
     margin: 0rem;
   }
-}
-
-@media only screen and (max-width:300px){
-  iframe{
-    height: 18rem;
-    width: 15rem;
-    }
-
-  .mapa{
-    margin: 0rem;
-  }
-}
-
-@media only screen and (max-width:340px){
-  .mapa{
-    margin: 0rem;
-  }
   }
   @media only screen and (max-width:300px){
     iframe{
       height: 18rem;
       width: 15rem;
       }
-
+   
     .mapa{
       margin: 0rem;
     }
     }
-
+  
 

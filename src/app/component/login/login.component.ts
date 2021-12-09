@@ -25,12 +25,12 @@ export class LoginComponent implements OnInit {
   onSubmit () {
     const { email, password } = this.formLogin.value;
     const body : LogInI = { email, password }
-
+   
     this.service.logIn(body)
     .subscribe((data : any) =>{
       console.log(data)
       this.router.navigate(["/home"])
-    });
+    });      
   }
 
   get user () { return this.formLogin.get('email') }

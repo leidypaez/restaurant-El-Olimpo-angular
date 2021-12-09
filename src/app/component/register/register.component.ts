@@ -12,13 +12,14 @@ import { Router } from '@angular/router';
 export class RegisterComponent implements OnInit {
 
   passwordMatch = true;
-
+  
   public formRegister = new FormGroup({
     email:    new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required, Validators.minLength(6)]),
     checked:  new FormControl('', [Validators.required, Validators.minLength(6)]),
     username: new FormControl('', [Validators.required, Validators.nullValidator])
   });
+  
   constructor(private service: ApiOlimpoService, private router:Router) { }
 
   ngOnInit(): void { }
@@ -28,12 +29,12 @@ export class RegisterComponent implements OnInit {
     const { username, email, password, checked } = this.formRegister.value;
     if(password !== checked){ this.passwordMatch = false; return }
     const body : UserI = { username, email, password }
-
+    
     this.service.register(body)
     .subscribe((data : any) =>{
       console.log(data)
       this.router.navigate(["/signIn"])
-    });
+    });      
   }
 
   get user () { return this.formRegister.get('username') }
@@ -59,5 +60,5 @@ export class RegisterComponent implements OnInit {
 //    })
 //   }
 
-
+  
 }

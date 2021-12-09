@@ -1,399 +1,399 @@
 @font-face {
-  font-family: 'LewishamShadowed';
-  src:url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.woff') format('woff'),
-      url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.svg') format('svg'),
-      /* LewishamShadowed.ttf.svg#LewishamShadowed */
-      url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.eot'),
-      /* 'LewishamShadowed.ttf.eot */
-      url('../../../assets/font/webfonts_LewishamShadowed/webfonts.ffonts.net.htm') format('embedded-opentype');
-      /* LewishamShadowed.ttf.eot?#iefix */
-  font-style: normal;
+    font-family: 'LewishamShadowed';
+    src:url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.woff') format('woff'), 
+        url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.svg') format('svg'), 
+        /* LewishamShadowed.ttf.svg#LewishamShadowed */
+        url('../../../assets/font/webfonts_LewishamShadowed/LewishamShadowed.ttf.eot'),
+        /* 'LewishamShadowed.ttf.eot */
+        url('../../../assets/font/webfonts_LewishamShadowed/webfonts.ffonts.net.htm') format('embedded-opentype'); 
+        /* LewishamShadowed.ttf.eot?#iefix */
+    font-style: normal;
 }
 /*{
-  font-family: 'LewishamShadowed';
+    font-family: 'LewishamShadowed';
 }
-body,
+body, 
 main::before{
-  background-image: url('../../../assets/images/login-fino2.jpg');
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  background-position:bottom;
+    background-image: url('../../../assets/images/login-fino2.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position:bottom;
 }
 
 main{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.808);
-  margin-top: 7rem;
-  margin-left: 29rem;
-  margin-right: 30rem;
-  color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.808);
+    margin-top: 7rem;
+    margin-left: 29rem;
+    margin-right: 30rem;
+    color: #fff;
 }
 
 main::before{
-content: '';
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-filter: blur(1px);
-z-index: -1;
-text-align: center;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(1px);
+  z-index: -1;
+  text-align: center;
 }
 
 h2{
-  font-size: 2.2rem;
-  text-shadow: 4px 4px 4px rgb(219, 19, 19);
+    font-size: 2.2rem;
+    text-shadow: 4px 4px 4px rgb(219, 19, 19);
 }
 
 form{
-  padding-left: 2.1rem;
-  width: 23rem;
+    padding-left: 2.1rem;
+    width: 23rem;
 }
 
 .form-control{
-  color: #fff;
-  border-bottom: 1px solid rgb(225, 231, 225);
+    color: #fff;
+    border-bottom: 1px solid rgb(225, 231, 225);
 }
 
 h4{
-  text-align: left;
-  text-shadow: 1px 1px 1px black;
+    text-align: left;
+    text-shadow: 1px 1px 1px black;
 }
 
 .label-text{
-  color: #fff;
-  letter-spacing: 0.7px;
-  font-size: 1.1rem;
+    color: #fff;
+    letter-spacing: 0.7px;
+    font-size: 1.1rem;
 }
 
 .btn{
-  width: 8rem;
-  height: 2.2rem;
-  padding-top: 0.4rem;
-  background-color: rgb(0, 128, 0);
-  margin-left: 12.9rem;
-  letter-spacing: 0.6px;
+    width: 8rem;
+    height: 2.2rem;
+    padding-top: 0.4rem;
+    background-color: rgb(0, 128, 0);
+    margin-left: 12.9rem;
+    letter-spacing: 0.6px;
 }
 
 .btn span{
-  color: #fff;
-  font-weight: 400;
-  font-size: medium;
+    color: #fff;
+    font-weight: 400;
+    font-size: medium;
 }
 
 @media only screen and (max-width: 1200px) {
-
+    
 }
 
 @media only screen and (max-width: 1170px) {
-  main{
-      margin-left: 23rem;
-      margin-right: 23rem;
-  }
-  form{
-      padding-left: 3rem;
-      width: 20rem;
-  }
-
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 10rem;
-  }
+    main{
+        margin-left: 23rem;
+        margin-right: 23rem;
+    }
+    form{
+        padding-left: 3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
-  main{
-      margin-left: 21rem;
-      margin-right: 21rem;
-  }
-  form{
-      padding-left: 3rem;
-      width: 20rem;
-  }
-
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 10rem;
-  }
+    main{
+        margin-left: 21rem;
+        margin-right: 21rem;
+    }
+    form{
+        padding-left: 3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
 }
 
 @media only screen and (max-width: 1030px) {
-  main{
-      margin-left: 19rem;
-      margin-right: 19rem;
-  }
-  form{
-      padding-left: 3rem;
-      width: 20rem;
-  }
-
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 10rem;
-  }
+    main{
+        margin-left: 19rem;
+        margin-right: 19rem;
+    }
+    form{
+        padding-left: 3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
 }
 
 @media only screen and (max-width: 970px) {
-  main{
-      margin-left: 17rem;
-      margin-right: 17rem;
-  }
-  form{
-      padding-left: 3rem;
-      width: 20rem;
-  }
-
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 10rem;
-  }
+    main{
+        margin-left: 17rem;
+        margin-right: 17rem;
+    }
+    form{
+        padding-left: 3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
 }
 
 @media only screen and (max-width: 920px) {
-  main{
-      margin-left: 15rem;
-      margin-right: 15rem;
-  }
-  form{
-      padding-left: 3rem;
-      width: 20rem;
-  }
-
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 10rem;
-  }
+    main{
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+    form{
+        padding-left: 3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
 }
 
 
 @media only screen and (max-width: 860px){
-  main{
-      margin-left: 13rem;
-      margin-right: 13rem;
-  }
-  form{
-      padding-left: 3rem;
-      width: 20rem;
-  }
-
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 10rem;
-  }
+    main{
+        margin-left: 13rem;
+        margin-right: 13rem;
+    }
+    form{
+        padding-left: 3rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
 }
 
 
 @media only screen and (max-width: 785px){
-  main{
-      margin-left: 10rem;
-      margin-right: 10rem;
-  }
-  form{
-      padding-left: 4rem;
-      width: 20rem;
-  }
-
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 10rem;
-  }
+    main{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    form{
+        padding-left: 4rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
 }
 
 
 @media only screen and (max-width: 710px){
-  main{
-      margin-left: 8rem;
-      margin-right: 8rem;
-  }
-  form{
-      padding-left: 4rem;
-      width: 20rem;
-  }
-
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 10rem;
-  }
+    main{
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+    form{
+        padding-left: 4rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
 }
 
 @media only screen and (max-width: 650px){
-  main{
-      margin-left: 6rem;
-      margin-right: 6rem;
-  }
-  form{
-      padding-left: 4rem;
-      width: 20rem;
-  }
-
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 10rem;
-  }
+    main{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    form{
+        padding-left: 4rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
 }
 
 @media only screen and (max-width: 560px) {
-  main{
-      margin-left: 2.8rem;
-      margin-right: 2.8rem;
-  }
-  form{
-      padding-left: 4rem;
-      width: 20rem;
-  }
-
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 10rem;
-  }
+    main{
+        margin-left: 2.8rem;
+        margin-right: 2.8rem;
+    }
+    form{
+        padding-left: 4rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10rem;
+    }
 }
 
 @media only screen and (max-width: 490px) {
-  main{
-      margin-left: 2.5rem;
-      margin-right: 2.5rem;
-  }
-  form{
-      padding-left: 1.4rem;
-      width: 20rem;
-  }
-
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 11.6rem;
-  }
+    main{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    form{
+        padding-left: 1.4rem;
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 11.6rem;
+    }
 }
 
 @media only screen and (max-width: 420px) {
-  main{
-      margin-top: 9rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
-  }
-  form{
-      padding-left: 0.4rem;
-      padding-right: 0.4rem;
-      width: 20rem;
-  }
-  h4{
-      padding-left: 0.8rem;
-  }
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 11.6rem;
-  }
+    main{
+        margin-top: 9rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    form{
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        width: 20rem;
+    }
+    h4{
+        padding-left: 0.8rem;
+    }
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 11.6rem;
+    }
 
 }
 
 @media only screen and (max-width: 360px) {
-  main{
-      margin-left: 1rem;
-      margin-right: 1rem;
+    main{
+        margin-left: 1rem;
+        margin-right: 1rem;
 
-  }
-  form{
-      padding-left: 0.4rem;
-      padding-right: 1rem;
-      width: 20rem;
-  }
-  h4{
-      padding-left: 0.8rem;
-  }
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 10.7rem;
-  }
+    }
+    form{
+        padding-left: 0.4rem;
+        padding-right: 1rem;
+        width: 20rem;
+    }
+    h4{
+        padding-left: 0.8rem;
+    }
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 10.7rem;
+    }
 
 }
 
 @media only screen and (max-width: 330px) {
-  main{
-      margin-left: 1rem;
-      margin-right: 1rem;
-
-  }
-  form{
-      padding-left: 0.4rem;
-      padding-right: 4rem;
-      width: 20rem;
-  }
-  h4{
-      padding-left: 0.8rem;
-  }
-  .btn{
-      width: 8rem;
-      height: 2.2rem;
-      padding-top: 0.4rem;
-      margin-left: 8rem;
-  }
+    main{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
+    }
+    form{
+        padding-left: 0.4rem;
+        padding-right: 4rem;
+        width: 20rem;
+    }
+    h4{
+        padding-left: 0.8rem;
+    }
+    .btn{
+        width: 8rem;
+        height: 2.2rem;
+        padding-top: 0.4rem;
+        margin-left: 8rem;
+    }
 
 }*/
 
 .img-login {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 .mask {
-  background-color: rgba(0, 0, 0, 0.233);
+    background-color: rgba(0, 0, 0, 0.233);
 }
 
 .containerForm {
-  width: 400px;
-  background-color: rgba(0, 0, 0, 0.76);
-  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.76);
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
 }
 
 form input {
-  border: none;
-  outline: none;
-  font-size: 16px;
-  border-bottom: 1px solid rgb(225, 231, 225)
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(225, 231, 225)
 
 }
 
 button[type="submit"] {
-  color: white;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
-  background: #681d1d ;
-  border: 1px solid #551919;
-
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    background: #681d1d ;
+    border: 1px solid #551919;
+    
 }
 
 button[type="submit"] :hover {
-  background: #551919 ;
+    background: #551919 ;
 }
