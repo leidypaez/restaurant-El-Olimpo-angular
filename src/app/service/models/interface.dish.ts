@@ -3,5 +3,5 @@ export interface DishI {
     price: Number,
     category: String,
     imageUrl: String,
-    description: String,
+    description: String
 }

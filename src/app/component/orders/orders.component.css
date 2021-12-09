@@ -1,0 +1,14 @@
+.btn-orders {
+  position: absolute;
+  background: #1e6f23;
+  padding: 10px 90px 10px 90px;
+  border-radius: 15px;
+  border: none;
+  left: 67%;
+  top: 65%;
+}
+
+.text-orders {
+  color: white;
+  font-size: 40px;
+}

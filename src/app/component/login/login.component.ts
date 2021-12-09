@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
 import { ApiOlimpoService } from 'src/app/service/api-olimpo.service';
 import { LogInI } from 'src/app/service/models/interface.login';
-
 import { Router } from '@angular/router';
-import { HomeComponent } from "../home/home.component";
-import { retry } from 'rxjs';
+
+// import { HomeComponent } from "../home/home.component";
+// import { retry } from 'rxjs';
 
 @Component({
   selector: 'app-login',

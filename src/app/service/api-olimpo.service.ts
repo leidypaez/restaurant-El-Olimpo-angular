@@ -1,8 +1,9 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { DishI } from './models/interface.dish';
+
 import { UserI } from './models/interface.user';
+import { DishI } from './models/interface.dish';
 import { LogInI } from './models/interface.login';
 
 @Injectable({
@@ -19,12 +20,12 @@ export class ApiOlimpoService {
     const urlNew = this.url + '/auth/signIn/';
     return this.http.post(urlNew, body);
   }
-  
+
   register(body : UserI) : Observable <any> {
     const urlNew = this.url + '/auth/signUp/';
     return this.http.post(urlNew, body);
   }
-  
+
   logout () {
     const urlNew = this.url + '/auth/logout/';
   }
@@ -38,11 +39,6 @@ export class ApiOlimpoService {
         'Authorization': `Bearer ${localStorage.getItem('x-olimpo-access')}`
       })}
     );
-
-    // console.log(localStorage.getItem('x-olimpo-access'))
-
-    // const urlNew = this.url + '/user';
-    // return this.http.get(urlNew);
   }
   
   removeDishes() : Observable <DishI[]> {

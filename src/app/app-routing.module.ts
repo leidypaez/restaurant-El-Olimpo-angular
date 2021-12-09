@@ -11,6 +11,8 @@ import { PoliciesAndPrivacyComponent } from './component/policies-and-privacy/po
 import { OrdersComponent } from './component/orders/orders.component';
 import { ChatComponent } from './component/chat/chat.component';
 import { EventsComponent } from './component/events/events.component';
+import { InformacionComponent } from './component/informacion/informacion.component';
+import { SobreNosotrosComponent } from './component/sobre-nosotros/sobre-nosotros.component';
 
 const routes: Routes = [
   {path: "", component: LandingPageComponent},
@@ -20,6 +22,8 @@ const routes: Routes = [
   {path: "events", component:EventsComponent},
   {path: "orders", component:OrdersComponent},
   {path: "chat", component:ChatComponent},
+  {path: "informacion", component:InformacionComponent},
+  {path: "sobreNosotros", component:SobreNosotrosComponent},
   {path: "carrito", component:CarritoComponent},
   {path: "policies-and-privacy", component:PoliciesAndPrivacyComponent},
   {path: "**", redirectTo: '', pathMatch: 'full'}

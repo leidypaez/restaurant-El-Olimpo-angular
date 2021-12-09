@@ -32,225 +32,225 @@ export class HomeComponent implements OnInit {
       "name": "Bandeja paisa",
       "category": "tradicional",
       "price": 20000,
-      "description": "Arroz blanco, Chicharrón,Huevo frito, Tajadas de plátano, Chorizo, Arepa, Fríjoles rojos Colombia.",
+      "description": "Arroz blanco, huevo frito, chorizo y plátano maduro.",
       "imageUrl": "../../../assets/imagesFood/colombia-bandeja-paisa.jpg"
-    },
-    {
-      "name": "ajiaco",
-      "category": "tradicional",
-      "price": 15000,
-      "description": "Diferentes tipos de papas y encurtidos, crema de leche  Colombiano ",
-      "imageUrl": "../../../assets/imagesFood/colombia-ajiaco.jpg"
     },
     {
       "name": "Coq au vin",
       "category": "tradicional",
       "price": 25000,
-      "description": "Ave con vino y vegetales  Frances ",
+      "description": "Estofado de ave elaborado con vino y vegetales.",
       "imageUrl": "../../../assets/imagesFood/francia-Coq au vin.jpg"
     },
     {
       "name": "Ratatouille",
       "category": "tradicional",
       "price": 28000,
-      "description": "Estofado de hortalizas Frances  ",
+      "description": "Estofado elaborado con zanahoria, tomate, remolacha.",
       "imageUrl": "../../../assets/imagesFood/francia-Ratatouille.jpg"
     },
     {
-      "name": "lasagna",
+      "name": "Lasagna",
       "category": "tradicional",
       "price": 28000,
-      "description": "Pastel de carnes salsa boloñesa y bechamel Italy.",
+      "description": "Pastel de carnes preparado con salsa boloñesa y bechamel.",
       "imageUrl": "../../../assets/imagesFood/italia-lasagna.jpg"
     },
     {
-      "name": "pasta",
+      "name": "Ajiaco",
+      "category": "tradicional",
+      "price": 15000,
+      "description": "Sopa de pollo que contiene diferentes tipos de papa.",
+      "imageUrl": "../../../assets/imagesFood/colombia-ajiaco.jpg"
+    },
+    {
+      "name": "Pasta",
       "category": "tradicional",
       "price": 20000,
-      "description": "Pasta con ingredientes al gusto  Italy ",
+      "description": " Pasta acompañada de salsa bolognesa y tostadas de pan.",
       "imageUrl": "../../../assets/imagesFood/italia-pasta.jpg"
     },
     {
-      "name": "caraotas  negras",
+      "name": "Pabellón criollo",
       "category": "tradicional",
       "price": 20000,
-      "description": "  Caraotas negras aliñadas sal y azucar al gusto  Venezuela",
+      "description": "Arroz blanco cocido, carne desmechada y caraotas negras.",
       "imageUrl": "../../../assets/imagesFood/venezuela-caraocas-negras.jpg"
     },
     {
-      "name": "chupecaraqueño",
+      "name": "Chupe Caraqueño",
       "category": "tradicional",
       "price": 15000,
-      "description": " Caldo de pollo con verdura y leche Venezuela",
+      "description": "Caldo de pollo con verduras y leche.",
       "imageUrl": "../../../assets/imagesFood/venezuela-chupe-caraqueño.jpg"
     },
     {
-      "name": "Postre chocolate",
+      "name": "Postre de chocolate",
       "category": "postres",
       "price": 15000,
-      "description": "Chocolate, leche condesada ",
+      "description": " Postre elaborado a base de chocolate y leche condesada.",
       "imageUrl": "../../../assets/imagesFood/postre-chocolate.jpg"
     },
     {
-      "name": "postre de limon",
+      "name": "Postre de limón",
       "category": "postres",
       "price": 15000,
-      "description": " Limon , gelatina , leche condesada galletas ",
+      "description": "Postre elaborado a base de limón, gelatina y galleta.",
       "imageUrl": "../../../assets/imagesFood/postre-de-limon.jpg"
 
     },
     {
-      "name": "postre de miel y arequipe",
+      "name": "Postre de miel y arequipe",
       "category": "postres",
       "price": 12000,
-      "description": " Miel arequipe azucar coco, almendras ",
+      "description": "Porción de pastel de vainilla acompañado de miel y arequipe.",
       "imageUrl": "../../../assets/imagesFood/postre-de-miel-y-arequipe.jpg"
     },
     {
-      "name": "fresas con crema",
+      "name": "Fresas con crema",
       "category": "postres",
       "price": 10000,
-      "description": "Las fresas con nata o crema ",
+      "description": "Fresas troceadas y bañadas en nata montada con azúcar.",
       "imageUrl": "../../../assets/imagesFood/postre-fresas-con-crema-y-frambuesa.jpg"
     },
     {
-      "name": "frambuesas con gelatina",
+      "name": "Frambuesas con gelatina",
       "category": "postres",
       "price": 12000,
-      "description": " Frambuesas con gelatina , azucar morena ",
+      "description": "Postre elaborado con frambuesas, gelatina y azúcar morena.",
       "imageUrl": "../../../assets/imagesFood/postre-fresas-con-gelatina-y-frambuesas.jpg"
     },
     {
-      "name": "mini cupkcaques",
+      "name": "Mini cupcakes",
       "category": "postres",
-      "price": 10000,
-      "description": "Ideales para todo tipo de situacion variadad de sabores ",
+      "price": 7000,
+      "description": "Porción de tarta de vainilla acompañada de trozos de frutas.",
       "imageUrl": "../../../assets/imagesFood/postre-mini-cupkcaques.jpg"
     },
     {
-      "name": "pastel de Mora ",
+      "name": "Pastel de mora ",
       "category": "postres",
       "price": 15000,
-      "description": "Mora azucar  yogur natural limon ",
+      "description": "Pastel elaborado a base de mora, azúcar, yogurt natural y limón.",
       "imageUrl": "../../../assets/imagesFood/postre-pastel-de-mora.jpg"
     },
     {
-      "name": "postre sencillo de frambuesa",
+      "name": "Postre sencillo de frambuesa",
       "category": "postres",
       "price": 12000,
-      "description": " franguesas crema de leche ",
+      "description": "Bizcocho relleno de mermelada de frambuesa.",
       "imageUrl": "../../../assets/imagesFood/postre-sencillo-de-frambuesas.jpg"
-    },
-    {
-      "name": "Agua",
-      "category": "bebidas",
-      "price": 6000,
-      "description": "Bebidas refrescante a sus gustos ",
-      "imageUrl": "../../../assets/imagesFood/Agua.jpg"
     },
     {
       "name": "Malteada de chocolate",
       "category": "bebidas",
       "price": 10000,
-      "description": " helado de chocolate y vainilla ,hielo, leche entera",
+      "description": " Bebida de helado de chocolate y vainilla.",
       "imageUrl": "../../../assets/imagesFood/Malteada chocolate.jpg"
     },
     {
       "name": "Malteada de fresa",
       "category": "bebidas",
       "price": 10000,
-      "description": " helado de fresa y vainilla ,hielo, leche entera",
+      "description": "Bebida preparada con helado de fresa y vainilla ",
       "imageUrl": "../../../assets/imagesFood/Malteada fresa.jpg"
     },
     {
       "name": "Malteada de vainilla",
       "category": "bebidas",
       "price": 10000,
-      "description": "helado de  vainilla ,hielo, leche entera",
+      "description": "Bebida preparada con helado de vainilla y arequipe.",
       "imageUrl": "../../../assets/imagesFood/MAlteada de vainilla.jpg"
     },
     {
       "name": "Gaseosa",
       "category": "bebidas",
-      "price": 8000,
-      "description": " refresco, fresco o soda",
+      "price": 6000,
+      "description": "Coca-Cola, Postobon, Pepsi.",
       "imageUrl": "../../../assets/imagesFood/Gaseosa.jpg"
     },
     {
-      "name": "Jugo de maracuya",
+      "name": "Jugo de maracuyá",
       "category": "bebidas",
       "price": 10000,
-      "description": "Maracuya jugo de limon y azucar ",
+      "description": "Bebida elaborada con maracuyá, jugo de limón y azúcar.",
       "imageUrl": "../../../assets/imagesFood/Jugo de maracuya.jpg"
     },
     {
-      "name": "Jugo frutos rojos",
+      "name": "Jugo de frutos rojos",
       "category": "bebidas",
       "price": 10000,
-      "description": " Variedad de frutos rojos al gusto azucar morena ",
+      "description": "Bebida elaborada con frutos rojos y miel.",
       "imageUrl": "../../../assets/imagesFood/Jugo frutos rojos.jpg"
     },
     {
-      "name": "Te helado de limon y mora",
+      "name": "Té helado de limón y mora",
       "category": "bebidas",
       "price": 9000,
-      "description": " Te verde jugo de limon , mora miel y azucar ",
+      "description": "Té verde con jugo de limón, mora y miel.",
       "imageUrl": "../../../assets/imagesFood/te-helado-limon-mora.jpg"
+    },
+    {
+      "name": "Agua",
+      "category": "bebidas",
+      "price": 6000,
+      "description": "Carbonatada.",
+      "imageUrl": "../../../assets/imagesFood/Agua.jpg"
     },
     {
       "name": "Aros de cebolla",
       "category": "adicionales",
       "price": 5000,
-      "description": "Cebolla sal a gusto acompañado de chile rojo en polvo , ",
+      "description": "Trozos de cebolla con sal al gusto acompañados de chile rojo en polvo.",
       "imageUrl": "../../../assets/imagesFood/aros cebolla.jpg"
     },
     {
-      "name": "cubitos de queso",
+      "name": "Cubitos de queso",
       "category": "adicionales",
       "price": 5000,
-      "description": " Queso mozarela parmesano y pan rallado ",
+      "description": "Trozitos de queso mozzarella acompañados de salsa de ajo.",
       "imageUrl": "../../../assets/imagesFood/cubos-de-queso.jpg"
     },
     {
-      "name": "deditos de queso",
+      "name": "Deditos de queso",
       "category": "adicionales",
       "price": 8000,
       "description": " Deditos de harina trigo con quesos al horno o frito ",
       "imageUrl": "../../../assets/imagesFood/deditos de queso.jpg"
     },
     {
+      "name": "Ensalada de vegetales",
+      "category": "adicionales",
+      "price": 4000,
+      "description": "Porción de vegetales picados en pequeños trozos bañados en salsa.",
+      "imageUrl": "../../../../../assets/imagesFood/ensalada-vegetales2.jpg"
+    },
+    {
       "name": "Ensalada de pollo",
       "category": "adicionales",
       "price": 4000,
-      "description": "Carne de pollo y vegetales ,delisiosas ensaladas  para que armes tu plato  como mas te guste ",
+      "description": "Ensalada de vegetales con carne de pollo.",
       "imageUrl": "../../../assets/imagesFood/ensalada pollo.jpg"
     },
     {
-      "name": "Ensalada vegetales",
-      "category": "adicionales",
-      "price": 4000,
-      "description": " Vegetales ,delisiosas ensaladas  para que armes tu plato  como mas te guste ",
-      "imageUrl": "../../../assets/imagesFood/ensalada vegetales.jpg"
-    },
-    {
-      "name": "Porcion de jamon",
+      "name": "Porción de jamón",
       "category": "adicionales",
       "price": 5000,
-      "description": "Jamon de todos tipos al gusto  ",
+      "description": "Más de 5 porciones de jamón ahumado importado.",
       "imageUrl": "../../../assets/imagesFood/jamon.jpg"
     },
     {
       "name": "Papas a la francesa",
       "category": "adicionales",
       "price": 6000,
-      "description": "Papas sal aceites para freirses crocantes y deliciosas para que armes tu plato  como más te guste " ,
+      "description": "Papas cortadas al estilo francés, fritas y crocantes, con sal al gusto." ,
       "imageUrl": "../../../assets/imagesFood/papas-francesa.jpg"
     },
     {
       "name": "Yuca a la francesa",
       "category": "adicionales",
       "price": 6000,
-      "description": "Yuca aceite de oliva para freir sal al gusto , crocantes y delisiosas para que armes tu plato  como mas te guste ",
+      "description": "Porción de yuca frita, al estilo francés, con sal al gusto.",
       "imageUrl": "../../../assets/imagesFood/yuca-francesa.jpg"
     }
   ]

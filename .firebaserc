@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "restaurant-el-olimpo": {
+      "hosting": {
+        "nvs-angular": [
+          "restaurant-el-olimpo"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "restaurant-el-olimpo"
+  }
+}

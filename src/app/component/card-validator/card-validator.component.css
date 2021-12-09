@@ -1,3 +1,7 @@
+body {
+  background: #000;
+  font-family: Arial, Helvetica, sans-serif
+}
 
 .container {
   background: #fff !important;
@@ -19,8 +23,7 @@ h4.text-danger {
 }
 
 .scol {
-  padding-left: 60px;
-  border: solid 1px rgb(182, 182, 182);
+  padding-left: 60px
 }
 
 .row.r2 {
@@ -60,7 +63,7 @@ div.col-2 {
 .form-control {
   border: none;
   border-radius: none;
-  border-bottom: 1px solid #2425273d
+  border-bottom: 1px solid #a9abae3d
 }
 
 .form-control:focus {
@@ -81,7 +84,7 @@ div.col-2 {
   margin-top: 10px
 }
 
-.btn.btn-primary {
+.btn.bg-success {
   border: none;
   border-radius: 40px;
   width: 40%
@@ -105,4 +108,51 @@ div.col-2 {
   .row.r2:after {
       width: 95%
   }
+}
+
+.icon-user {
+  position: absolute;
+  top: 161.5%;
+  left: 710px;
+}
+
+.icon-card {
+  position: absolute;
+  top: 167%;
+  left: 710px;
+}
+
+.icon-calendar {
+  position: absolute;
+  top: 172%;
+  left: 712px;
+}
+
+/* Entérate de nuestras últimas novedades en la sección de eventos */
+.icon-key {
+  position: absolute;
+  top: 172%;
+  left: 980px;
+}
+
+
+.green-icon input {
+  color: #198754;
+}
+.green-icon {
+  color: #198754;
+}
+
+.red-icon input {
+  color: #dc3545;
+}
+
+.red-icon {
+  color: #dc3545;
+}
+
+
+.section-target {
+  border-left: 1px solid #c1c2c2;
+  border-right: 1px solid #dedfdf;
 }

@@ -2,8 +2,8 @@
 <section>
   <img src="../../../assets/images/section-home.png" width="1347" height="555" alt="">
 </section>
-<section>
-  <ul class="nav justify-content-center filtros-letra">
+<section class="table">
+  <ul class="nav justify-content-center filtros-letra section-nav-two table">
     <li class="nav-item">
       <a class="nav-link active filtros-letra" aria-current="page" (click)="changeType('tradicional')">Tradicional</a>
     </li>
@@ -22,7 +22,7 @@
 <div class="container">
   <div class="row">
   <!-- | filter:'category':criterio -->
-  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 section-target" *ngFor="let item of data | filter:'category':type">
+  <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 section-target" *ngFor="let item of data | filter:'category':type">
       <div class="card">
         <img
           src="{{item.imageUrl}}"

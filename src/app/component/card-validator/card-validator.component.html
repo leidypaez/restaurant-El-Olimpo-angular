@@ -1,0 +1,107 @@
+<!-- seccion del formulario de la targeta -->
+<form>
+  <div class="container m-5 mx-auto">
+    <div class="row main">
+      <div class="col-lg-6 col-12 rcol">
+        <h3 class="product text-center mt-3">ZONA DE PAGO</h3>
+        <div class="image text-center">
+          <img
+            src="../../../assets/images/target-credit.png"
+            width="500px"
+            height="450px"
+          />
+        </div>
+        <p class="text-center mb-5">
+          Nuestro restaurante da como prioridad la seguridad de nuestros
+          clientes <br />por esto nos abstenemos de utilizar su informacion solo
+          para su compra, <br />
+          para mayor informacion visite nuetras, <br />
+          <a [routerLink]="['/policies-and-privacy']">politicas y privacidad</a>
+        </p>
+      </div>
+      <div class="col-lg-6 col-12 scol mt-5 section-target">
+        <div class="row">
+          <h6 class="text-muted">Informacion de pago:</h6>
+        </div>
+        <div class="row">
+          <h6>Digite la informacio requerida</h6>
+        </div>
+        <div class="row r3">
+          <h3 class="payment">METODOS DE PAGO</h3>
+        </div>
+        <div *ngIf="Loading" class="spinner-border text-success ml-5" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="row">
+          <h6 class="payment-method">Seleccione el metodo de pago:</h6>
+        </div>
+        <div class="row r5">
+          <div class="col-2">
+            <img
+              src="https://img.icons8.com/color/48/000000/mastercard-logo.png"
+            />
+          </div>
+          <div class="col-2">
+            <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          </div>
+          <div class="col-2">
+            <img src="https://img.icons8.com/color/48/000000/paypal.png" />
+          </div>
+        </div>
+        <div class="row r3">
+          <form class="personalDetails" [formGroup]="form" (ngSubmit)="createTarget()">
+            <div class="form-group">
+              <i class="fas fa-user-circle icon-user"
+                [class.green-icon]="this.form.get('titular')?.valid"
+                [class.red-icon]="this.form.get('titular')?.invalid && this.form.get('titular')?.touched">
+              </i>
+              <input type="text" class="form-control"
+                [class.green-icon]="this.form.get('titular')?.valid"
+                [class.red-icon]="this.form.get('titular')?.invalid && this.form.get('titular')?.touched"
+                formControlName="titular" placeholder="Nombre del titular de la tarjeta"
+              />
+            </div>
+            <div class="form-group">
+              <i class="fas fa-credit-card icon-card"
+                [class.green-icon]="this.form.get('numberTarget')?.valid"
+                [class.red-icon]="this.form.get('numberTarget')?.invalid && this.form.get('numberTarget')?.touched">
+              </i>
+              <input type="text" class="form-control"
+                [class.green-icon]="this.form.get('numberTarget')?.valid"
+                [class.red-icon]="this.form.get('numberTarget')?.invalid && this.form.get('numberTarget')?.touched"
+                formControlName="numberTarget" placeholder="Numero de tarjeta" maxlength="16"
+              />
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-4">
+                  <i class="fas fa-calendar-alt icon-calendar"
+                    [class.green-icon]="this.form.get('dateExpedition')?.valid"
+                    [class.red-icon]="this.form.get('dateExpedition')?.invalid && this.form.get('dateExpedition')?.touched">
+                  </i>
+                  <input type="text" class="form-control"
+                    [class.green-icon]="this.form.get('dateExpedition')?.valid"
+                    [class.red-icon]="this.form.get('dateExpedition')?.invalid && this.form.get('dateExpedition')?.touched"
+                    formControlName="dateExpedition" placeholder="MM/AA" maxlength="5"
+                  />
+                </div>
+                <div class="col-4 offset-2">
+                  <i class="fas fa-key icon-key"
+                    [class.green-icon]="this.form.get('cvv')?.valid"
+                    [class.red-icon]="this.form.get('cvv')?.invalid && this.form.get('cvv')?.touched">
+                  </i>
+                  <input type="password" class="form-control"
+                    [class.green-icon]="this.form.get('cvv')?.valid"
+                    [class.red-icon]="this.form.get('cvv')?.invalid && this.form.get('cvv')?.touched"
+                    formControlName="cvv" placeholder="CCV" maxlength="3"
+                  />
+                </div>
+              </div>
+            </div>
+            <button [disabled]="form.invalid" type="submit" class="btn bg-success mt-4">PAGAR</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

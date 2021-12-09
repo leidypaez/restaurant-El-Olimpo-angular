@@ -15,28 +15,28 @@
           <form class="formulario" class="d-flex flex-column align-content-around " [formGroup]="formLogin" (ngSubmit)="onSubmit()">
 
             <div class="form-outline my-3">
-              <input id="email" type="email" formControlName="email" class="form-control form-control-lg text-white" />
+              <input id="email" type="email" formControlName="email" class="form-control form-control-lg text-white" autocomplete="off"/>
               <label for="email" class="form-label"><span class="label-text  text-white font-weight-normal">Correo Electronico</span></label>
             </div>
-            
+
             <div class="form-outline my-3">
-              <input id="password" type="password" formControlName="password" class="form-control form-control-lg text-white" />
+              <input id="password" type="password" formControlName="password" class="form-control form-control-lg text-white" autocomplete="off"/>
               <label for="password" class="form-label"><span class="label-text  text-white font-weight-normal">Contraseña</span></label>
             </div>
-            
+
             <div class=" my-3">
               <a class="nav-link text-white" [routerLink]="['/signUp']">Registrarse</a>
             </div>
 
             <div class=" my-3">
-              <p class="text-danger" *ngIf="user && user.invalid && user.touched">email input field is not valid</p>
-              <p class="text-danger" *ngIf="password && password.invalid && password.touched">password input field  is not valid</p>
+              <p class="text-danger" *ngIf="user && user.invalid && user.touched">Correo eléctronico inválido</p>
+              <p class="text-danger" *ngIf="password && password.invalid && password.touched">Contraseña inválida</p>
               <p class="text-danger" *ngIf="!notUser">email or password wrong</p>
             </div>
 
             <div class="my-3">
               <button class="btn btn-info text-black btn-lg btn-block login-button" type="submit"
-                [disabled]="formLogin.invalid"><span class="text-white">Iniciar</span></button>
+                [disabled]="formLogin.invalid" [routerLink]="['/home']"><span class="text-white">Iniciar</span></button>
             </div>
           </form>
 
@@ -44,7 +44,7 @@
 
       </div>
     </div>
-  
+
   </div>
 </div>
 <!--<main>
@@ -60,17 +60,17 @@
             <input id="email" type="email" formControlName="email" class="form-control form-control-lg" />
             <label for="email" class="form-label"><span class="label-text">Correo eléctronico</span></label>
           </div>
-  
+
           <div class="form-outline mb-4">
             <input id="password" type="password" formControlName="password" class="form-control form-control-lg" />
             <label for="password" class="form-label"><span class="label-text">Contraseña</span></label>
           </div>
-  
+
           <div class="pt-1 mb-4">
             <button class="btn btn-info text-black btn-lg btn-block login-button" type="button" [routerLink]="['/home']" routerLinkActive="router-link-active" ><span>Iniciar</span></button>
             <button class="btn btn-info text-black btn-lg btn-block login-button" type="submit" [disabled]="!usuario.valid"><span>Iniciar</span></button>
           </div>
         </form>
   </div>
-  </div> 
+  </div>
 </main>-->

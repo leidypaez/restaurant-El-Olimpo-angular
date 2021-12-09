@@ -24,13 +24,13 @@
         <!-- Left links -->
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-white" [routerLink]="['/signIn']">
+            <a class="nav-link text-white nav-title" [routerLink]="['/signIn']">
               Iniciar sesión
             </a>
           </li>
           <!-- Navbar dropdown -->
           <li class="nav-item">
-            <a class="nav-link text-white" [routerLink]="['/signUp']">
+            <a class="nav-link text-white nav-title" [routerLink]="['/signUp']">
               Registrarse
             </a>
           </li>
@@ -66,7 +66,7 @@
             <div class="text-white text-center">
               <h1 class="mb-3">El Olimpo</h1>
               <h5 class="mb-4">
-                Disfruta la mejor comida hecha por los mismisimos dioses
+                ¡El placer de comer como los dioses!
               </h5>
             </div>
           </div>
@@ -79,7 +79,7 @@
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white text-center">
               <h2 style="background-color: rgba(15, 15, 15, 0.3)">
-                Puedes disfrutas de maravillosos cenas
+                Un oasis de sabores que podrás disfrutar y degustar..
               </h2>
             </div>
           </div>
@@ -101,7 +101,7 @@
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white text-center">
               <h2 style="background-color: rgba(65, 41, 16, 0.3)">
-                Disfruta de los eventos con un delicioso postre
+                Encontrarás la diferencia en nuestros gustos y tradiciones..
               </h2>
             </div>
           </div>
@@ -146,7 +146,7 @@
           >
             <img
               src="../../../assets/images/about-us.jpg.crdownload"
-              class="img-fluid"
+              class="img-fluid animate__animated animate__fadeInLeft animate__slow	2s"
               width="500"
               height="400"
             />
@@ -159,42 +159,24 @@
           </div>
         </div>
 
-        <div class="col-md-6 gx-5 mb-4">
-          <h4><strong>Nuestra empresa</strong></h4>
-          <p class="text-muted">
-            Somos una empresa que busca que el cliente se sienta como un dios al
-            utilizar nuestros servicios , con alto conocimiento en la producción
-            y venta de comidas, la experiencia adquirida a través de los años,
-            nos da el conocimiento para valorar la importancia del cliente,
-            quien es el motivo de nuestros esfuerzos, y así llegar a ustedes con
-            la seguridad de poder ofrecerles nuestros productos de excelente
-            calidad.
-          </p>
-          <hr />
-          <p>
-            <strong>
-              Entra y registrá y disfruta de nuestros servicios como los
-              mismísimos dioses
-            </strong>
+        <div class="col-md-6 gx-5 mb-4 pt-5 informacion">
+          <h4 class="pb-3"><strong>Nuestra empresa</strong></h4>
+          <p class="texto">Nuestra empresa, con más de 14 años de trayectoria, nos
+            ha dado la sabiduría para valorar la importancia del cliente, quien es
+            el motivo de nuestros esfuerzos, para así llegar a ellos con la seguridad
+            de poder ofrecerles nuestros productos de excelente calidad. Más que una
+            empresa, nos consideramos una familia.
           </p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <h4><strong class="pt-4">Nuestros Servicios</strong></h4>
-          <p class="pt-4">
-            Es una aplicación para los servicios de un restaurante, en el cual
-            se puede registrar el usuario pedir su comida a domicilio o de
-            manera presencial. Es un restaurante de comida extravagante con
-            varios platos divididos por secciones. Se puede pedir la comida
-            agregar adiciones.
-          </p>
-          <p>
-            con responsabilidad y cumplimiento. Contamos con excelente calidad
-            humana que les brindara la atención apropiada, para de esta manera
-            poder llegar a saber y entender sus gustos y necesidades. El hecho
-            de contar con ustedes como nuestros clientes es motivo de
-            satisfacción.
+        <div class="col-md-6 pt-5 informacion">
+          <h4><strong class="pb-3">Nuestros Servicios</strong></h4>
+          <p class="texto">
+            Ofrecemos servicios tipo buffet y servidos a la carta, con personal calificado
+            para que el cliente se sienta satisfecho, y un gran ambiente para poder estar
+            totalmente a gusto. Manejamos una amplia variedad de platillos, tanto nacionales
+            como internacionales, elaborados por los más reconocidos chefs del país.
           </p>
         </div>
 
@@ -206,7 +188,7 @@
             <img
               src="../../../assets/images/bebidas-landing.jpg"
               alt=""
-              class="img-fluid"
+              class="img-fluid pt-3 animate__animated animate__slideInRight animate__slow	2s"
             />
             <a href="#!">
               <div
@@ -222,7 +204,11 @@
     <hr class="my-5" />
   </div>
   <div class="container-fluid parallax bg-image bg-image-0">
-    <div class="mask"></div>
+    <div class="mask">
+      <div class="d-flex justify-content-center align-items-center h-100 text-parallax">
+        <p class="text-white mb-0 animate__animated animate__backInUp animate__slow	2s">Más allá del límite del buen gusto..</p>
+      </div>
+    </div>
   </div>
   <hr class="my-5" />
   <app-footer></app-footer>
